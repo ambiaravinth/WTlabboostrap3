@@ -1,0 +1,73 @@
+<!DOCTYPE html5>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container text-center p-3 my-0 text-white bg-danger w-100 p-2">
+    <h1>Registration form</h1>    
+  </div>
+  <div class="container bg-primary text-white w-100 p-2">
+    <form>
+      <div class="form-group">
+        <label for="name">FIRST NAME</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter the first name">
+      </div>
+      <div class="form-group">
+        <label for="name">LAST NAME</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter the last name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your mail-Id">
+      </div>
+      <div class="mx-auto d-flex align-items-baseline justify-content-between mt-3">
+        <label for="genderLabel" class="form-label">Gender<span class="text-danger"></span></label>     
+        <div class="d-flex justify-content-around w-100">
+            <div class="form-check ">
+              <input type="radio" id="male" name="gender" class="form-check-input">
+              <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="female" name="gender" class="form-check-input">
+              <label for="female" class="form-check-label">Female</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="female" name="gender" class="form-check-input">
+              <label for="female" class="form-check-label">Transgender</label>
+            </div>
+          </div>
+        </div>   
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">DEPARTMENT</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Select department</option>
+            <option>IT</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>CIVIL</option>
+            <option>MECH</option>
+          </select>
+        </div> 
+        <div class="form-group text-white ">
+          <label for="exampleFormControlTextarea1">Address</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check text-center">
+            <input type="checkbox" class="form-check-input" id="terms">
+            <label for="terms" class="form-check-label">I agree the terms and Conditions</label>
+          </div>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-dark text-center">Submit</button>
+        </div>
+      </div> 
+    </form>
+  </div>
+</body>
+</html>
